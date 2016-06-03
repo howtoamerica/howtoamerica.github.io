@@ -29,6 +29,17 @@ noscript h6 {
     transform: translate(-50%, -85%);
 }
 
+div > a {
+    bottom: 20px;
+    color: #ccc;
+    position: fixed;
+    right: 20px;
+}
+
+div > a:hover {
+    color: #888;
+}
+
 #salad {
     cursor: pointer;
     height: 1px;
@@ -38,7 +49,7 @@ noscript h6 {
     width: 1px;
 }
 
-i {
+div > i {
     left: 0;
     position: absolute;
     top: 0;
@@ -56,7 +67,7 @@ i {
 #start {
     background: radial-gradient(#e77, #e00);
     background-color: #e00;
-    border: 10px solid #888;
+    border: 10px solid #999;
     border-radius: 100%;
     cursor: pointer;
     height: 500px;
@@ -89,10 +100,10 @@ i {
     position: absolute;
 }
 
-a {
+.auto-type a {
     color: #e00;
 }
 
-a:hover {
+.auto-type a:hover {
     color: #a00;
 }
