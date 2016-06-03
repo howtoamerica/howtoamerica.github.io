@@ -70,7 +70,7 @@ function autoType(string, element, intervalNormal, intervalBreak, intervalStop, 
 $("#start").click(function() {
     $(this).off("click").fadeOut(500, function() {
         setTimeout(function() {
-            autoType("Really? That's the best you can do? You're given a huge red button, and all you can think of to do is make it fade away?\\n\\nThis is America, you know better than that! We need some explosions! Where's Michael Bay?!\\n\\nI'm feeling generous, so you get a second chance.", $(".auto-type")[0], 75, 250, 500, true, function() {
+            autoType("Really? That's the best you can do? You're given a huge red button, and all you can think of to do is make it fade away?\\n\\nThis is America, you know better than that! We need some explosions! Where's Michael Bay?!\\n\\nHere, you get a second chance.", $(".auto-type")[0], 75, 250, 500, true, function() {
                 $(".auto-type").fadeOut(500);
                 $("#start").css("top", "-275px").show().animate({top: "45%"}, 500, function() {
                     $(this).effect("bounce", {times: 3}, 1500, function() {
@@ -95,10 +95,10 @@ $("#start").click(function() {
                                                                     setTimeout(function() {
                                                                         $(".auto-type").text("");
                                                                         $(".auto-type").show();
-                                                                        autoType("Excellent, now you have the hang of it! Americans don't eat salad! (Duh.)", $(".auto-type")[0], 75, 250, 500, true, function() {
+                                                                        autoType("Excellent, now you've got the hang of it! Americans hate unhealthy foods like salad! (Duh.)", $(".auto-type")[0], 75, 250, 500, true, function() {
                                                                             $('<a href="welcome"></a>').appendTo(".auto-type");
                                                                             autoType("\\n\\nLet's go learn some more American conventions.", $(".auto-type a")[0], 75, 250, 500, false, function() {
-                                                                                $('<i class="fa fa-arrow-circle-right fa-lg fa-fw" aria-hidden="true"></i>').appendTo(".auto-type a");
+                                                                                $("i").css({left: "", position: "relative", top: ""}).appendTo(".auto-type a");
                                                                             });
                                                                         });
                                                                     }, 100);
