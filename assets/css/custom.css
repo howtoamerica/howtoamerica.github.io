@@ -8,6 +8,16 @@
     font-family: AlexBrush;
 }
 
+@font-face {
+    src: url("../fonts/Dearest.ttf");
+    font-family: Dearest;
+}
+
+@font-face {
+    src: url("../fonts/OldLondon.ttf");
+    font-family: OldLondon;
+}
+
 #background {
     background: url("../images/flag-cropped.png") no-repeat;
     background-size: 100% 100%;
@@ -23,29 +33,100 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px #999;
-    font-family: MuseoSans;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    font-family: MuseoSans, sans-serif;
+    margin: 20px auto;
 }
 
 .panel {
-    margin-left: -15px;
-    margin-right: 20px;
+    margin: auto 20px auto -15px;
     position: absolute;
+}
+
+.list-group-item {
+    padding-left: 25px;
+}
+
+#active {
+    background: -webkit-linear-gradient(315deg, #e00 7.5%, #eee 7.5%, #eee 15%, #00e 15%, #00e 22.5%, #eee 22.5%);
+    background: linear-gradient(135deg, #e00 7.5%, #eee 7.5%, #eee 15%, #00e 15%, #00e 22.5%, #eee 22.5%);
+    padding-left: 45px;
 }
 
 #content {
     margin-left: 166.08px;
-    min-height: 284.33px;
+    min-height: 344.67px;
 }
 
-h1 {
+#content > h1 {
+    display: inline-block;
     font-family: AlexBrush, serif;
     font-size: 64px;
 }
 
-img {
+#content img {
     width: 400px;
+}
+
+#start {
+    margin: 10px -5px 0 0;
+}
+
+#start, #button {
+    background: -webkit-linear-gradient(left, #e99, #eee, #99e);
+    background: linear-gradient(to right, #e99, #eee, #99e);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px #999;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#start:active, #button:active {
+    box-shadow: 0 0 10px 2px #bbb;
+}
+
+#button {
+    font-size: 24px;
+}
+
+#sentences, #images, #restaurants, #certificate {
+    display: none;
+}
+
+#sentences p, #images div, #restaurants img {
+    cursor: pointer;
+}
+
+#images img, #restaurants img {
+    width: 200px;
+}
+
+#certificate {
+    border: 2px solid #000;
+    border-radius: 10px;
+    font-family: OldLondon, serif;
+    text-align: center;
+}
+
+#certificate h1 {
+    font-family: Dearest, serif;
+    font-size: 48px;
+}
+
+#certificate hr {
+    border-bottom: 2px dashed #000;
+}
+
+#certificate h4 {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+#certificate span {
+    text-decoration: underline;
 }
 
 .footer {
@@ -54,8 +135,4 @@ img {
 
 .footer p {
     display: inline-block;
-}
-
-.footer a {
-    float: right;
 }

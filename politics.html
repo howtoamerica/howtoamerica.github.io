@@ -23,16 +23,6 @@
         <![endif]-->
     </head>
     <body>
-        <noscript>
-            <style>
-                .container {
-                    display: none;
-                }
-            </style>
-            <h1>This site needs JavaScript to work! Please enable it.</h1>
-            <h3>Thanks.</h3>
-            <h6>(You should probably go enable it now.)</h6>
-        </noscript>
         <div id="background"></div>
         <div class="container">
             <div class="panel panel-default">
@@ -44,32 +34,39 @@
                 <a href="culture" class="list-group-item">Culture</a>
                 <a href="food" class="list-group-item">Food</a>
                 <a href="tourism" class="list-group-item">Tourism</a>
-                <a href="politics" class="list-group-item active">Politics</a>
+                <a href="politics" id="active" class="list-group-item">Politics</a>
+                <a href="quiz" class="list-group-item">Quiz</a>
             </div>
             <div id="content">
                 <h1>Politics of America</h1>
                 <hr>
-                <p>America has one of the most advanced political systems in the whole universe. Here's the gist of it:</p>
+                <p>America has one of the most advanced political systems in the whole universe. Here's how it works:</p>
                 <ol>
-                    <li>A bunch of Americans hoping to become president give long and exasperating lectures about all the things they promise to [never] do once they become president.</li>
-                    <li>On a very special day, all Americans 18 and up rush to their local voting polls to seclude themselves in a claustrophobic box where they cast their votes.</li>
-                    <li>The people's votes don't actually matter, because someone else votes for them. On one overdramatic night, the votes are counted and the new president struggles not to burst out with ecstasy.</li>
-                    <li>Half the country tries to beat up the other half because they didn't get the president they wanted. A third of the things the president said come true, a third don't and the last third totally backfire.</li>
-                    <li>Americans are stuck with their new president for four years, having to deal with all the blunders he/she makes. After which, they fight over a new president.</li>
+                    <li>A bunch of donkeys and elephants hoping to become president give long and exasperating lectures about all the things they promise to [kind of] do once they become president.</li>
+                    <li>On a very special day, Americans stampede to their local voting polls to seclude themselves in a claustrophobic box where they cast their votes.</li>
+                    <li>Plot twist! The people's votes don't really matter, because someone else votes for them. On one dramatic night, the votes are counted and either the donkey or the elephant becomes president.</li>
+                    <li>Half the country tries to beat up the other half because they either wanted a donkey or an elephant as president.
+                    <li>The president does some of the things he/she promised but mostly slacks off. If the president is bored, he/she will go start some random war for no reason, like the Vietnam War or the Iraq War.</li>
+                    <li>Some Americans have a revelation and forget why they would even vote for this incompetent president. Sadly for them, they're stuck with this president for four years. Afterwards, the cycle repeats itself, and Americans fight over more donkeys and elephants.</li>
                 </ol>
-                <p>One such presidental candidate was a man by the name of Donald Trump, known for his moving speeches about love, socioeconomic equality, pacifism and butterflies.</p>
+                <p>One such presidential candidate was a man by the name of Donald
+                    <abbr title="Trump">Drumpf</abbr>,
+                known for his moving speeches about love, socioeconomic equality, pacifism and butterflies.</p>
                 <img src="assets/images/trump-love.jpg" class="img-responsive img-thumbnail">
             </div>
             <div class="footer">
                 <hr>
                 <p>&copy; 2016 How to America</p>
-                <a href="https://howtoamerica.github.io/">Go to the intro.
-                    <i class="fa fa-arrow-circle-right fa-lg fa-fw" aria-hidden="true"></i>
-                </a>
+                <a href="#github" class="pull-right">
+                    <i class="fa fa-github fa-lg fa-fw" aria-hidden="true"></i>
+                View page source on GitHub</a>
             </div>
         </div>
         
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/github.js"></script>
     </body>
 </html>

@@ -23,16 +23,6 @@
         <![endif]-->
     </head>
     <body>
-        <noscript>
-            <style>
-                .container {
-                    display: none;
-                }
-            </style>
-            <h1>This site needs JavaScript to work! Please enable it.</h1>
-            <h3>Thanks.</h3>
-            <h6>(You should probably go enable it now.)</h6>
-        </noscript>
         <div id="background"></div>
         <div class="container">
             <div class="panel panel-default">
@@ -40,17 +30,18 @@
                     <h4>How to America</h4>
                 </div>
                 <a href="welcome" class="list-group-item">Welcome</a>
-                <a href="language" class="list-group-item active">Language</a>
+                <a href="language" id="active" class="list-group-item">Language</a>
                 <a href="culture" class="list-group-item">Culture</a>
                 <a href="food" class="list-group-item">Food</a>
                 <a href="tourism" class="list-group-item">Tourism</a>
                 <a href="politics" class="list-group-item">Politics</a>
+                <a href="quiz" class="list-group-item">Quiz</a>
             </div>
             <div id="content">
                 <h1>Language of America</h1>
                 <hr>
-                <p>The main language used in America is one that many people may not have heard of before. This language is extremely rare, and you are considered lucky if you ever read it or if someone ever speaks it to you. It is known as English.</p>
-                <p>Here are some examples of what English does and doesn't look like:</p>
+                <p>The main language used in America is one that many people have not heard of before. This language is extremely rare, and you are considered lucky if you have ever seen it. It is known as English.</p>
+                <p>For visual learners, here are some examples of what English does and doesn't look like:</p>
                 <h2>
                     <i class="fa fa-check fa-lg fa-fw" aria-hidden="true"></i>
                 English</h2>
@@ -82,13 +73,16 @@
             <div class="footer">
                 <hr>
                 <p>&copy; 2016 How to America</p>
-                <a href="https://howtoamerica.github.io/">Go to the intro.
-                    <i class="fa fa-arrow-circle-right fa-lg fa-fw" aria-hidden="true"></i>
-                </a>
+                <a href="#github" class="pull-right">
+                    <i class="fa fa-github fa-lg fa-fw" aria-hidden="true"></i>
+                View page source on GitHub</a>
             </div>
         </div>
         
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/github.js"></script>
     </body>
 </html>

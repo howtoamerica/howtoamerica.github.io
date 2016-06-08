@@ -1,0 +1,21 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url("../fonts/BebasNeue.otf");
+}
+
+noscript, .container {
+    font-family: BebasNeue, Helvetica, sans-serif;
+    font-size: 36px;
+    left: 50%;
+    margin-right: -50%;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+img {
+    margin: 0 auto;
+    width: 500px;
+}

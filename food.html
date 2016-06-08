@@ -23,16 +23,6 @@
         <![endif]-->
     </head>
     <body>
-        <noscript>
-            <style>
-                .container {
-                    display: none;
-                }
-            </style>
-            <h1>This site needs JavaScript to work! Please enable it.</h1>
-            <h3>Thanks.</h3>
-            <h6>(You should probably go enable it now.)</h6>
-        </noscript>
         <div id="background"></div>
         <div class="container">
             <div class="panel panel-default">
@@ -42,14 +32,15 @@
                 <a href="welcome" class="list-group-item">Welcome</a>
                 <a href="language" class="list-group-item">Language</a>
                 <a href="culture" class="list-group-item">Culture</a>
-                <a href="food" class="list-group-item active">Food</a>
+                <a href="food" id="active" class="list-group-item">Food</a>
                 <a href="tourism" class="list-group-item">Tourism</a>
                 <a href="politics" class="list-group-item">Politics</a>
+                <a href="quiz" class="list-group-item">Quiz</a>
             </div>
             <div id="content">
                 <h1>Food of America</h1>
                 <hr>
-                <p>Food comes in all sorts of shapes and sizes, but the majority of it is big and greasy. Americans take pride in their food, often consuming way more fat, sugar and salt than they should. Of course, this has no impact on their health whatsoever due to Americans' Super Digestive Systems&trade;. In fact, the obesity rate for Americans is only 0.01%!</p>
+                <p>Food comes in all shapes and sizes, but most of it is just big and greasy in America. Americans take pride in their food, often consuming way more fat, sugar and salt than they should. Of course, this has no impact on their health in any way whatsoever because... well it just doesn't. In fact, the obesity rate for Americans is the lowest in the world!</p>
                 <p>Here are some pictures of healthy and delicious American meals:</p>
                 <img src="assets/images/french-fries.jpg" class="img-responsive img-thumbnail">
                 <img src="assets/images/fried-chicken.jpg" class="img-responsive img-thumbnail">
@@ -59,13 +50,16 @@
             <div class="footer">
                 <hr>
                 <p>&copy; 2016 How to America</p>
-                <a href="https://howtoamerica.github.io/">Go to the intro.
-                    <i class="fa fa-arrow-circle-right fa-lg fa-fw" aria-hidden="true"></i>
-                </a>
+                <a href="#github" class="pull-right">
+                    <i class="fa fa-github fa-lg fa-fw" aria-hidden="true"></i>
+                View page source on GitHub</a>
             </div>
         </div>
         
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/github.js"></script>
     </body>
 </html>

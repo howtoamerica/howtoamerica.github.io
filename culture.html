@@ -23,16 +23,6 @@
         <![endif]-->
     </head>
     <body>
-        <noscript>
-            <style>
-                .container {
-                    display: none;
-                }
-            </style>
-            <h1>This site needs JavaScript to work! Please enable it.</h1>
-            <h3>Thanks.</h3>
-            <h6>(You should probably go enable it now.)</h6>
-        </noscript>
         <div id="background"></div>
         <div class="container">
             <div class="panel panel-default">
@@ -41,30 +31,34 @@
                 </div>
                 <a href="welcome" class="list-group-item">Welcome</a>
                 <a href="language" class="list-group-item">Language</a>
-                <a href="culture" class="list-group-item active">Culture</a>
+                <a href="culture" id="active" class="list-group-item">Culture</a>
                 <a href="food" class="list-group-item">Food</a>
                 <a href="tourism" class="list-group-item">Tourism</a>
                 <a href="politics" class="list-group-item">Politics</a>
+                <a href="quiz" class="list-group-item">Quiz</a>
             </div>
             <div id="content">
                 <h1>Culture of America</h1>
                 <hr>
-                <p>America has an extremely unique culture. It consists of many cultures from around the world which have been mashed together to form one collective culture which is somehow worse than all the others combined.</p>
-                <p>Because of this, Americans have some traits which no other cultures consist of. For example, Americans are extremely attached to their phones, often getting furious and ferocious when they are taken away from them. It is a common legend that if an American is separated from his/her phone for more than 24 hours, that person will suffer from
-                    <abbr title="Extreme loneliness">lonelyitis</abbr>
+                <p>America has an extremely unique culture. Basically, a long time ago, families from other countries around the world moved here for whatever reason and jumped into a huge melting pot. All the cultures got mashed together and somehow produced a much stranger one, which we call American culture.</p>
+                <p>Because of this, Americans have many traits independent of other cultures. For example, Americans are extremely attached to their phones and will do anything to keep their phones near them. In fact, it is common legend that if an American is separated from his/her phone for more than 24 hours, that person will suffer from
+                    <abbr title="extreme loneliness">lonelyitis</abbr>
                 and die shortly thereafter.</p>
-                <p>Other traits unique to American culture are racism and sexism. These traits make Americans highly susceptible to civil wars, protests, riots, uprisings and anarchy. They are genetically acquired, taking hundreds of years of mutation to annul.</p>
+                <p>Americans are also more susceptible to social diseases, stereotypes and prejudices. For example, they are known for their long and pointless wars, riots, uprisings and anarchy about racism and sexism.</p>
             </div>
             <div class="footer">
                 <hr>
                 <p>&copy; 2016 How to America</p>
-                <a href="https://howtoamerica.github.io/">Go to the intro.
-                    <i class="fa fa-arrow-circle-right fa-lg fa-fw" aria-hidden="true"></i>
-                </a>
+                <a href="#github" class="pull-right">
+                    <i class="fa fa-github fa-lg fa-fw" aria-hidden="true"></i>
+                View page source on GitHub</a>
             </div>
         </div>
         
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/github.js"></script>
     </body>
 </html>
