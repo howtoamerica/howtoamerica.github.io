@@ -117,11 +117,14 @@ var counter = 0;
 $("#start").click(start);
 
 $("#button").click(function buttonClick() {
+    if (counter === 0)
+        $("#button").off("click");
+    
     $("p").eq(0).fadeOut(function() {
         ++counter;
         
         if (counter === 1) {
-            $("#button").off("click").text("");
+            $("#button").text("");
             autoType("1 click isn't enough. Come on, show some American effort and persistence!", $("#button")[0], 75, 200, 400, false, function() {
                 $("#button").click(buttonClick);
             });
@@ -133,6 +136,25 @@ $("#button").click(function buttonClick() {
             autoType("\\nSorry to interrupt your focus, but have you considered pressing the button in the top right corner? Don't worry, Americans aren't known for their brightness.", $("#auto-type")[0], 75, 200, 400, false, function() {
                 $("#start").click(start);
             });
+        }
+        
+        if (counter === 150) {
+            $("#start").off("click");
+            autoType(" Hey, can you even read?", $("#auto-type")[0], 75, 200, 400, false, function() {
+                $("#start").click(start);
+            });
+        }
+        
+        if (counter === 200) {
+            $("#start").off("click");
+            autoType("\\n\\nPress the other button already!", $("#auto-type")[0], 75, 200, 400, false, function() {
+                $("#start").click(start);
+            });
+        }
+        
+        if (counter === 250) {
+            $("#button").off("click").text("");
+            autoType("Haha, can't press me anymore. Go press the OTHER button!", $("#button")[0], 75, 200, 400, false);
         }
     });
 });
